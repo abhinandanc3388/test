@@ -2,11 +2,15 @@
 
 pipeline{
     agent any
-    stages('Demo'){
+    stages{
         
-        steps{
+        stage('Demo'){
+            
+             steps{
             Sharedlib("Abhinandan")
         }
+            
+        }   
         
     }
 }
